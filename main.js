@@ -59,6 +59,10 @@ console.log(deposites);
 
 */
 
+// .reduce()
+
+/*
+
 const transaction = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
 
 const newTransaction = transaction.reduce((acc, item, index, arr) => {
@@ -66,3 +70,51 @@ const newTransaction = transaction.reduce((acc, item, index, arr) => {
      return acc + item;
 }, 0)
 console.log(`Total: ${newTransaction}`);
+
+*/
+
+// .find()
+
+/*
+
+const transactions = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
+
+
+const firstDeposit = transactions.find((transaction) => {
+
+    return transaction > 0;
+});
+
+const firstWithdrawal = transactions.find((transaction) => {
+
+    return transaction < 0;
+});
+
+console.log(firstDeposit);
+console.log(firstWithdrawal);
+
+*/
+
+// .some() & .every()
+
+const transactions = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
+//console.log(transactions.includes(100));
+
+const hasWithdrawals = transactions.some((transactions) => {
+   return transactions < 0;
+});
+console.log(hasWithdrawals);
+
+const hasWithdrawalsOver2000 = transactions.some((transactions) => {
+    return transactions < -2000;
+ });
+ console.log(hasWithdrawalsOver2000);
+
+
+
+
+
+
+
+
+
