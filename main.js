@@ -97,6 +97,8 @@ console.log(firstWithdrawal);
 
 // .some() & .every()
 
+/*
+
 const transactions = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
 //console.log(transactions.includes(100));
 
@@ -116,8 +118,18 @@ const hasWithdrawalsOver2000 = transactions.some((transactions) => {
  });
  console.log(everyTransaction);
 
+ */
+
+// .flat() & .flatMap()
 
 
+const accounts = [['User1'], ['User2'], ['User3'], ['User4'], ['User5'], ['User6']];
 
+const accountsArray = accounts.flat();
+console.log(accountsArray)
 
+const accounts2 = [['User1', ['some InnerData']], ['User2', ['some InnerData']], ['User3', ['some InnerData']], ['User4'], ['User5'], ['User6']];
+
+const deeperAccountsArray = accounts2.flat(2);
+console.log(deeperAccountsArray);
 
