@@ -43,6 +43,8 @@ console.log(transactionInfo);
 
 // .filter()
 
+/*
+
 const transaction = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
 
 const withdrawals = transaction.filter((transaction) => {
@@ -55,3 +57,12 @@ const deposites = transaction.filter((transaction) => {
 });
 console.log(deposites);
 
+*/
+
+const transaction = [100, -200, 300, -400, 500, -600, 700, -800, 900, -1000];
+
+const newTransaction = transaction.reduce((acc, item, index, arr) => {
+    console.log(acc);
+     return acc + item;
+}, 0)
+console.log(`Total: ${newTransaction}`);
