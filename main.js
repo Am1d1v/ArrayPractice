@@ -111,7 +111,10 @@ const hasWithdrawalsOver2000 = transactions.some((transactions) => {
  console.log(hasWithdrawalsOver2000);
 
 
-
+ const everyTransaction = transactions.every((transactions) => {
+    return transactions > 50;
+ });
+ console.log(everyTransaction);
 
 
 
